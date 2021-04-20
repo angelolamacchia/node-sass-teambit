@@ -1,0 +1,15 @@
+$brandColor: #ffe7d2;
+$buttonColor: #2c4792;
+$textColor: #6b5644;
+$textColor2: #58402c;
+
+@mixin widthContent {
+    width: 80%;
+    margin: 0 auto;
+} 
+
+@mixin displayFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
