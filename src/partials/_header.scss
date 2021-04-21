@@ -1,6 +1,10 @@
 .header_content {
     @include widthContent;
 
+    #logo {
+        height: 30px;
+    }
+
     display: flex;
     justify-content: space-between;
     align-items: center;
