@@ -1,7 +1,7 @@
 .footer_content {
     @include widthContent;
     padding: 40px 0;
-    color: $textColor;
+    color: $textColor2;
     font-weight: 500;
     font-size: 13px;
 
@@ -23,6 +23,12 @@
             a {
                 color: $buttonColor;
             }
+        }
+    }
+
+    .blog {
+        p {
+            color: $textColor;
         }
     }
 }
