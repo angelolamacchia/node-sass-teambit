@@ -241,6 +241,9 @@ button {
 }
 
 @media screen and (max-width: 991px) {
+  .main_content .jumbo {
+    text-align: center;
+  }
   .main_content .functions .card_left,
 .main_content .functions .card_right {
     width: 100%;
