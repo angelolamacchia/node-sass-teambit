@@ -13,3 +13,9 @@ $textColor2: #58402c;
     justify-content: center;
     align-items: center;
 }
+
+@mixin clearFix  {
+    content: "";
+    display: table;
+    clear: both;
+}

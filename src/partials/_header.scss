@@ -30,5 +30,24 @@
             }
         }
     }
+
+    i {
+        display: none;
+        font-size: 30px;
+        color: $textColor;
+    }
 }
 
+@media screen and (max-width: 991px) {
+    header {
+        .header_content {
+            .buttons {
+                display: none;
+            }
+
+            i {
+                display: block;
+            }
+        }   
+    }
+}

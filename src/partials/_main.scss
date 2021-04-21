@@ -48,12 +48,140 @@
                 .bunny {
                     height: 40%;
                     width: 40%;
+                    min-width: 200px;
                     padding: 30px 0 60px 0;
                 }
             }
-            
+        }
+    }
+
+    .functions {
+
+        .card {
+            width: 80%;
+            padding: 30px 0;
+            border: none;
+
+            .row {
+                width: 100%;
+            }
+
+            img {
+                width: 100%;
+            }
+
+            h5 {
+                padding-bottom: 30px;
+            }
+
+            a {
+                color: $buttonColor;
+            }
+
+            .card_text img {
+                padding-top: 100px;
+            }
+        }
+
+        .card_left {
+            float: left;
+            @include displayFlex;
+        }
+        .card_right {
+            float: right;
+            @include displayFlex;
+        }
+    }
+    .functions::after {
+        @include clearFix;
+    }
+
+    .evidence {
+        background-color: $brandColor;
+        padding-bottom: 50px;
+
+        .evidence_content {
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+
+            .evidence_title {
+                padding: 40px 0;
+
+                h2 {
+                    padding: 10px 0;
+                }
+            }
+
+            .evidence_text {
+                text-align: left;
+                background-color: white;
+                border-radius: 20px;
+                padding: 30px;
+                font-size: 12px;
+                border: 1px solid $buttonColor;
+                position: relative;
+            }
+
+            i#quote {
+                position: absolute;
+                top: -5px;
+                left: 0;
+                font-size: 25px;
+                color: $buttonColor;
+            }
+
+            .founders {
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                    margin-right: 10px;
+                }
+
+                .founders_name {
+                    color: $buttonColor;
+                    font-weight: bold;
+                }
+            }
+
+            .buttons {
+                @include displayFlex;
+                padding-top: 30px;
+                padding-bottom: 10px;
+                span {
+                    padding: 0 5px;
+                }
+            }
+
+            a {
+                color: $textColor;
+            }
             
         }
     }
+
+}
+
+@media screen and (max-width: 991px) {
+    .main_content {
+        .functions { 
+            .card_left,
+            .card_right {
+                width: 100%;
+                float: none;
+                text-align: center;
+                padding: 0 20px;
+            }   
+        }
+
+        .evidence {
+            .evidence_content {
+                width: 80%;
+            }
+        }
+    } 
     
 }
